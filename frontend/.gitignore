@@ -40,3 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 *.next
+
+# local development server output
+/.codex-dev-server.log
+/.codex-dev-server.err

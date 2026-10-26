@@ -1,2 +1,5 @@
 /.next
-/.next
+
+# macOS metadata
+.DS_Store
+Thumbs.db
