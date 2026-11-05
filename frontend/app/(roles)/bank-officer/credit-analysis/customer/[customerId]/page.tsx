@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { Sidebar } from "@/src/components/layout";
 import { AuthGuard } from "@/src/components/auth";
 import { UserRound, Phone, Mail as MailIcon, Landmark, ArrowLeft } from "lucide-react";
@@ -13,7 +13,6 @@ import ModuleHeader from "@/src/components/ui/module-header";
  */
 export default function CreditAnalysisCustomerPage() {
   // Simple customer profile summary pulled from route/query context with a quick back action.
-  const params = useParams<{ customerId: string }>();
   const searchParams = useSearchParams();
   const customerName = searchParams.get("name") || "Amila Silva";
 

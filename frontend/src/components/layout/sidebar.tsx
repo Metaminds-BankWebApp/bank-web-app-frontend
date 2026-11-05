@@ -24,7 +24,6 @@ import { type SidebarItem, type UserRole, getSidebarRoleConfig } from "@/config/
 import { authService } from "@/src/api/auth/auth.service";
 import { cn } from "@/src/lib/utils";
 import { useAuthStore } from "@/src/store";
-import { ModeToggle } from "@/src/components/mode-toggle";
 
 const iconMap: Record<SidebarItem["icon"], ComponentType<{ size?: number; className?: string }>> = {
   "layout-dashboard": LayoutDashboard,
